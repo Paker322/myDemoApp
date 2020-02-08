@@ -56,7 +56,7 @@ public class AppTest
         int [] arrayp = new int[]{1,2,3,4};
         String exp1 = "20";
         String exp2 = "40";
-        assertTrue(new App().exep(arrayv,arrayp,exp1,exp2));
+        assertTrue(!new App().exep(arrayv,arrayp,exp1,exp2));
       }
   
       public void testLongArray() {
@@ -64,14 +64,14 @@ public class AppTest
         int [] arrayp = new int[]{1,2,3,4,5,6,7};
         String exp1 = "35";
         String exp2 = "20";
-        assertTrue(new App().exep(arrayv,arrayp,exp1,exp2));
+        assertTrue(!new App().exep(arrayv,arrayp,exp1,exp2));
       }
       public void testOneTrueArray() {
         int [] arrayv = new int[]{1,2,3,4};
         int [] arrayp = new int[]{1,2,3,4};
         String exp1 = "29";
         String exp2 = "20";
-        assertTrue(new App().exep(arrayv,arrayp,exp1,exp2));
+        assertTrue(!new App().exep(arrayv,arrayp,exp1,exp2));
       }     
       
       public void testNullArray() {
@@ -79,6 +79,6 @@ public class AppTest
         int [] arrayp = new int[]{};
         String exp1 = "35";
         String exp2 = "20";
-        assertTrue(new App().exep(arrayv,arrayp,exp1,exp2));
+        assertTrue(!new App().exep(arrayv,arrayp,exp1,exp2));
       }
 }
